@@ -16,7 +16,7 @@ public class CoolWeatherDB {
 	/**
 	 * 数据库名
 	 */
-	public static final String DB_NAME = "cool_weather";
+	public static final String DB_NAME = "cool_weather.db";
 
 	/**
 	 * 数据库版本
@@ -118,7 +118,7 @@ public class CoolWeatherDB {
 			City city = new City();
 			city.setId(cursor.getInt(cursor.getColumnIndex("id")));
 			city.setCityName(cursor.getString(cursor
-					.getColumnIndex("city_name ")));
+					.getColumnIndex("city_name")));
 			city.setCityCode(cursor.getString(cursor
 					.getColumnIndex("city_code")));
 			city.setProvinceId(provinceId);
